@@ -20,7 +20,7 @@
  * Configuracion de directorios
  */
 define("PATH_BASE", "/home/jmartinmachado/Codigo/Pruebas/WSSimple");
-define("PATH_CLASES", PATH_BASE . "/operaciones/");
+define("PATH_CLASES", PATH_BASE . "/servicios/");
 
 /**
  * Configuracion de logs

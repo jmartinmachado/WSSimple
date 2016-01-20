@@ -48,3 +48,21 @@
   }
 }
 5510 2016-01-19 23:37:28 INFO  {"fecha":"2016-01-19 23-37-28","mensaje":"La operaci\u00f3n se realiz\u00f3 correctamente","resultado":{"usuario":"pepeasdasda","pass":"pepe123"}}
+5513 2016-01-19 23:54:11 INFO  {
+  "servicio": "Autenticacion",
+  "operacion": "login",
+  "param": {
+    "usuario": "pepeasdasda",
+    "pass": "pepe123"
+  }
+}
+5513 2016-01-19 23:54:11 INFO  {"fecha":"2016-01-19 23-54-11","mensaje":"La operaci\u00f3n se realiz\u00f3 correctamente","resultado":{"usuario":"pepeasdasda","pass":"pepe123"}}
+5517 2016-01-19 23:57:21 INFO  {
+  "servicio": "Autenticacion",
+  "operacion": "login",
+  "param": {
+    "usuario": "pepeasdasda",
+    "pass": "pepe123"
+  }
+}
+5517 2016-01-19 23:57:21 INFO  {"fecha":"2016-01-19 23-57-21","mensaje":"La operaci\u00f3n se realiz\u00f3 correctamente","resultado":{"usuario":"pepeasdasda","pass":"pepe123"}}
