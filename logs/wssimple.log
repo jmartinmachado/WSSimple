@@ -15,3 +15,36 @@
 5511 2016-01-19 23:04:02 DEBUG asdasdads
 5513 2016-01-19 23:06:35 DEBUG asdasdads
 5517 2016-01-19 23:07:19 DEBUG asdasdads
+5509 2016-01-19 23:34:23 INFO  object(stdClass)#28 (3) {
+  ["servicio"]=>
+  string(13) "Autenticacion"
+  ["operacion"]=>
+  string(5) "login"
+  ["param"]=>
+  object(stdClass)#42 (2) {
+    ["usuario"]=>
+    string(11) "pepeasdasda"
+    ["pass"]=>
+    string(7) "pepe123"
+  }
+}
+
+5509 2016-01-19 23:34:23 INFO  {"fecha":"2016-01-19 23-34-23","mensaje":"La operaci\u00f3n se realiz\u00f3 correctamente","resultado":{"usuario":"pepeasdasda","pass":"pepe123"}}
+11810 2016-01-19 23:35:09 INFO  {
+  "servicio": "Autenticacion",
+  "operacion": "login",
+  "param": {
+    "usuario": "pepeasdasda",
+    "pass": "pepe123"
+  }
+}
+11810 2016-01-19 23:35:09 INFO  {"fecha":"2016-01-19 23-35-09","mensaje":"La operaci\u00f3n se realiz\u00f3 correctamente","resultado":{"usuario":"pepeasdasda","pass":"pepe123"}}
+5510 2016-01-19 23:37:28 INFO  {
+  "servicio": "Autenticacion",
+  "operacion": "login",
+  "param": {
+    "usuario": "pepeasdasda",
+    "pass": "pepe123"
+  }
+}
+5510 2016-01-19 23:37:28 INFO  {"fecha":"2016-01-19 23-37-28","mensaje":"La operaci\u00f3n se realiz\u00f3 correctamente","resultado":{"usuario":"pepeasdasda","pass":"pepe123"}}

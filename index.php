@@ -5,7 +5,7 @@
  * @category Categoria
  * @package  WSSimple
  * @author   Machado, Juan Martín <machado.juanmartin@gmail.com>
- * @license  www.juanmartinmachado.com.ar
+ * @license  juanmartinmachado www.juanmartinmachado.com.ar
  * @version  1.0.0
  * @link     jmartinmachado, https://github.com/jmartinmachado/WSSimple
  *
@@ -39,10 +39,22 @@ header("Content-Type: application/json");
 /**
  * Leo el contenido del json y lo parseo
  */
-echo json_encode(inicio(file_get_contents("php://input")));
+$resultado = json_encode(inicio(file_get_contents("php://input")));
+ws_info($resultado);
+echo $resultado;
 
 /**
- * Cargo automaticamente las clases
+ * Descripcion: Cargo automaticamente las clases
+ *
+ * @param json $json json de entrada
+ *
+ * @author Juan Martin Machado
+ *
+ * @internal Fecha de creación: 2016-01-19
+ * @internal Ultima modificación: 2016-01-19
+ * @internal Razón: Creacion
+ *
+ * @return json Resultado de la operacion
  */
 function inicio($json)
 {
@@ -58,6 +70,7 @@ function inicio($json)
         /**
          * Parseo el json
          */
+        ws_info($json);
         $datos = json_decode($json);
         if (!$datos) {
             $datosTransaccion->mensaje = "Error al intentar parsear el json";
@@ -116,15 +129,24 @@ function inicio($json)
     return $datosTransaccion;
 }
 
-
-
-
-
+/**
+ * Descripcion: carga la clases y metodos
+ *
+ * @param string $nombreClase Nombre de la clase a cargar
+ *
+ * @author Juan Martin Machado
+ *
+ * @internal Fecha de creación: 2016-01-19
+ * @internal Ultima modificación: 2016-01-19
+ * @internal Razón: Creacion
+ *
+ * @return boolean Resultado de la operacion
+ */
 function cargarClase($nombreClase)
 {
     $archivoClase = PATH_CLASES . $nombreClase . "/" . $nombreClase . ".php";
     if (file_exists($archivoClase)) {
-        require_once $archivoClase;
+        include_once $archivoClase;
         return true;
     } else {
         return false;
