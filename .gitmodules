@@ -1,0 +1,3 @@
+[submodule "lib/FuncionLog"]
+	path = lib/FuncionLog
+	url = git@github.com:jmartinmachado/FuncionLog.git
